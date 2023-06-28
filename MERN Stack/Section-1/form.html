@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="firstdiv">
+        <h1>Student Admission Form</h1>
+        <hr>
+
+        <form action="">
+            <label for="name">Student Name</label>
+            &ensp;
+            <input type="text" id="name" placeholder="Enter Name">
+        
+            <br>
+            <br>
+
+            <label for="">Gender</label>
+            &ensp;
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            
+            <br>
+            <br>
+
+            <label for="number">Phone Number</label>
+            &ensp;
+            <input type="number" placeholder="842***">
+
+            <br>
+            <br>
+
+            <label for="dob">DOB</label>
+            &ensp;
+            <input type="date" id="dob">
+            
+            <br>
+            <br>
+
+            <label for="email">E-Mail</label>
+            &ensp;
+            <input type="email" id="email" placeholder="abc@gmail.com">
+            
+            <br>
+            <br>
+
+            <label for="">Languages</label>
+            &ensp;
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" id="hindi">
+            <label for="english">English</label>
+            <input type="checkbox" id="english">
+
+            <br>
+            <br>
+
+            <label for="board">Board</label>
+            &ensp;
+            <input type="text" id="board" list="random"> 
+            
+            <datalist id="random">
+                <option>CBSE</option>
+                <option>ICSE</option>
+                <option>UP Board</option>
+            </datalist>
+
+            <br>
+            <br>
+
+            <label for="state">State</label>
+            &ensp;
+            <select name="" id="state">
+                <option value="">Delhi</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Mumbai</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="">Course</label>
+            &ensp;
+            <label for="btech">B.Tech</label>
+            <input type="radio" name="course" id="btech">
+            <label for="mba">MBA</label>
+            <input type="radio" name="course" id="mba">
+
+            <br>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
