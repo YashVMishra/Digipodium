@@ -14,9 +14,9 @@
         <!-- Navbar -->
         <div class="header">
             <div class="title">
-                <span style="margin-top: 2px;"><i style="color: greenyellow;" class="fa-solid fa-microphone-lines fa-2x"></i> <h2 class="page-title">hipsound</h2></span>
+                <span style="margin-top: 2px;"><i style="color: greenyellow;" class="fa-solid fa-microphone-lines fa-2x my-title"></i> <h2 class="page-title my-title">hipsound</h2></span>
         
-                <span class="right-items">
+                <span class="right-items my-title">
                     <a style="color: yellowgreen;" class="myh-h4">Home &nbsp;</a> &nbsp;
                     <a class="myh-h4">Releases &nbsp;</a> &nbsp;
                     <a class="myh-h4">Podcast &nbsp;</a> &nbsp;
@@ -24,7 +24,7 @@
                     <a class="myh-h4">Events &nbsp;</a> &nbsp;
                     <a class="myh-h4">Pages &nbsp;</a> &nbsp;
         
-                    <button class="mybtn-1">Sign In <i class="fa-solid fa-right-to-bracket"></i></button>
+                    <button class="mybtn-1 my-box">Sign In <i class="fa-solid fa-right-to-bracket"></i></button>
                 </span>
             </div>
         </div> <!-- Navbar -->
@@ -33,15 +33,15 @@
         <div class="container text-center fw-bold" style="padding: 50px 0px 10px 0px;">
     
             <div class="">
-                <p style="color: yellowgreen; font-size: 30px; font-family: Montserrat;" class="fw-bold mb-0">Welcome to Hipsound</p>
+                <p style="color: yellowgreen; font-size: 30px; font-family: Montserrat;" class="fw-bold mb-0 my-title">Welcome to Hipsound</p>
             </div>
     
             <div class="">
-                <p class="display-5 fw-bold" style="color: white; font-family: Montserrat;">Thousand Of Songs <br> and Podcasts in your <br> device</p>
+                <p class="display-5 fw-bold my-title" style="color: white; font-family: Montserrat;">Thousand Of Songs <br> and Podcasts in your <br> device</p>
             </div>
             
             <div>
-                <button class="mybtn-3">Go Premium</button>
+                <button class="mybtn-3 my-box">Go Premium</button>
             </div>
         </div><!-- HERO -->
     
@@ -50,9 +50,9 @@
         <div class="footer-content">
             <div class="footer-body" style="margin-top: 12px;">
                 <div>
-                    <p>
+                    <p class="my-title">
                         <span style="color: yellowgreen; font-family: Montserrat; font-weight: bold; font-size: 20px;">Try Upto One Month Free </span> <br>
-                        <span style="color: white; font-family: Montserrat; font-weight: bold; font-size: 20px;">Get Thousand of songs and Podcast</span>
+                        <span style="color: white; font-family: Montserrat; font-weight: bold; font-size: 20px;">Get Thousand of Songs and Podcast</span>
                     </p>
                 </div>
     
@@ -64,13 +64,34 @@
     
                 <div style="margin-bottom: 7px;">
                     <p>
-                        <button class="mybtn-2">Start Your Free Trial</button>
+                        <button class="mybtn-2 my-box">Start Your Free Trial</button>
                     </p>
                 </div>
             </div>
         </div>
         </footer><!-- Footer -->
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+       ScrollReveal().reveal('.my-title', {
+        delay : 500,
+        origin : 'bottom',
+        distance : '50px',
+       }); 
+       
+       ScrollReveal().reveal('.my-box', {
+        delay : 500,
+        origin : 'right',
+        distance : '100px',
+        rotate : {
+            x : 0,
+            y : 0,
+            z : 40
+        }
+       }); 
+    </script>
 </body>
 </html> 
