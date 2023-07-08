@@ -1,0 +1,108 @@
+.body {
+    background-image: url(BG-Image-1.jpeg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.212);
+    height: 10vh;
+    width: 100%;
+}
+
+.page-title {
+    color: white;
+    display: inline;
+    font-size: 30px;
+    font-family: Montserrat;
+}
+
+.title {
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+.right-items {
+    display: inline;
+    text-align: right;
+    margin-left: 330px;
+    font-size: 20px;
+}
+
+.myh-h4 {
+    display: inline;
+    font-family: Montserrat;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mybtn-1 {
+    font-family: Montserrat;
+    border-radius: 5px;
+    padding: 10px 18px 10px 18px;
+    height: 45px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.212);
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.368);
+    height: 20vh;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-body {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mybtn-2 {
+    font-family: Montserrat;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    height: 50px;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    background-color: rgba(0, 0, 0, 0.212);
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mybtn-3 {
+    background-color: yellowgreen; 
+    padding: 10px 30px 10px 30px; 
+    font-size: 20px; 
+    font-family: Montserrat; 
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+
+.mybtn-1:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+.mybtn-2:hover {
+    background-color: yellowgreen;
+    color: black;
+}
+
+.mybtn-3:hover {
+    background-color: rgba(0, 0, 0, 0.703);
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
+}

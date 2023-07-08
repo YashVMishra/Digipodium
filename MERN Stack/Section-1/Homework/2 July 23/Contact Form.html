@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+        .myCard-1 {
+            /* border: 2px solid black; */
+            width: 300px;
+            padding: 30px 50px 50px 50px;
+            border-radius: 10px 0px 0px 10px;
+            /* border-color: rgb(142, 26, 142); */
+            /* border-width: 5px 3px 5px 5px; */
+            /* box-shadow: 0px 10px 10px 2px rgb(142, 26, 142); */
+            background-color: white;
+            height: 350px;
+            /* background-image: url(BG--EMAIL.png);
+            background-size: cover; */
+        }
+
+        .myCard-2 {
+            /* border: 2px solid black; */
+            width: 300px;
+            padding: 30px 50px 50px 50px;
+            border-radius: 0px 10px 10px 0px;
+            border-color: rgb(142, 26, 142);
+            /* border-width: 5px 5px 5px 3px; */
+            /* box-shadow: 0px 10px 10px 2px rgb(142, 26, 142); */
+            background-color: white;
+            height: 350px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image:url(https://media.istockphoto.com/id/89219959/photo/purple-wall.webp?b=1&s=170667a&w=0&k=20&c=_ynFCFGVEe5myKRzQHcuE5xJsCAApI5yI5D76yv2hoc=);
+            background-size: cover;
+            /* background-image: linear-gradient(60deg, yellow, red); */
+        }
+
+        .myinput {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            padding: 5px 10px;
+            border: none;
+            height: 30px;
+            border-radius: 20px;
+            background-color: rgb(225, 198, 244);
+            height: 50px;
+        }
+        
+        .mybtn {
+            width: 50%;
+            background-color: rgb(190, 111, 239);
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            border: none;
+            /* box-shadow: 0px 5px 10px 2px rgb(206, 142, 251); */
+            margin-left: 70px;
+            margin-right: 50px;
+            margin-top: 10px;
+        }
+
+        .mybtn:hover {
+            background-color: white;
+            color: rgb(190, 111, 239);
+            border: 3px solid rgb(190, 111, 239);
+        }
+
+        .form-title {
+            font-family: Montserrat;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 0px;
+            color: rgb(190, 111, 239);
+            margin-bottom: 7px;
+            font-size: 30px;
+            padding-bottom: 5px;
+        }
+
+        .form-title-2 {
+            font-family: Montserrat;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 0px;
+            color: rgb(190, 111, 239);
+            margin-bottom: 20px;
+        }
+
+        /* .form-title-2 {
+            font-family: Montserrat;
+            margin-top: 0px;
+            text-align: center;
+            color: rgb(225, 198, 244);
+        } */
+
+        * {
+            font-family: Montserrat;
+        }
+
+        #msg {
+            height: 70px;
+        }
+
+        .heading {
+            font-weight: bold; 
+            color: rgb(190, 111, 239); 
+            font-size: 30px;
+            text-align: center;
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+
+        .image {
+            width: 300px;
+            height: 220px;
+            margin-top: 0px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .twitter, .whatsapp, .insta {
+            margin: 20px 30px 0px 30px;
+            color: rgb(190, 111, 239);
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="myCard-1">
+        <p class="heading">Contact Us</p>
+
+        <img src="BG--EMAIL-2.png" alt="" class="image">
+
+        <div class="footer">
+            <i class="fa-brands fa-twitter twitter"></i> 
+            <i class="fa-brands fa-whatsapp whatsapp"></i>
+            <i class="fa-brands fa-instagram insta"></i>
+        </div>
+    </div>
+
+    <div class="myCard-2">
+        <h2 class="form-title">Get In Touch</h2>
+        <h4 class="form-title-2">Feel Free to Message Us Anytime</h4>
+
+        <form action="">
+            <input type="text" name="" id="" class="myinput" placeholder="Name">
+
+            <input type="email" name="" id="" class="myinput" placeholder="E-Mail">
+
+            <input type="text" name="" id="msg" class="myinput" placeholder="Message">
+
+            <button class="mybtn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
