@@ -21,26 +21,37 @@ const Navbar = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        
         <li className="nav-item">
           <NavLink className="nav-link" aria-current="page" to="/home">
             Home
           </NavLink>
         </li>
+
         <li className="nav-item">
           <NavLink className="nav-link" to="/login">
             Login
           </NavLink>
         </li>
+
         <li className="nav-item dropdown">
           <NavLink className="nav-link" to="/signup">
             SignUp
           </NavLink>
         </li>
+
         <li className="nav-item dropdown">
           <NavLink className="nav-link" to="/events">
             Event Handling
           </NavLink>
         </li>
+
+        <li className="nav-item dropdown">
+          <NavLink className="nav-link" to="/state">
+            State Management
+          </NavLink>
+        </li>
+
       </ul>
       <form className="d-flex" role="search">
         <input

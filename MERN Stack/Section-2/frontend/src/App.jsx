@@ -5,6 +5,7 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Navbar from './components/Navbar';
 import EventHandling from './components/EventHandling';
+import StateManagement from './components/StateManagement';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='login' element={<Login/>}/>
           <Route path='signup' element={<SignUp/>}/>
           <Route path='events' element={<EventHandling/>}/>
+          <Route path='state' element={<StateManagement/>}/>
         </Routes>
         </BrowserRouter>
     </div>
