@@ -1,6 +1,5 @@
 import React from 'react'
-import './signup.css';
-import './Digipodium logo.png';
+import '../styling/signup.css';
 
 const SignUp = () => {
   return (
@@ -8,8 +7,8 @@ const SignUp = () => {
       <div className="mydiv">
         <form action="">
         
-          <img src="Digipodium logo.png" alt="" className="myimg" />
-          <h2 className="myh1">Sign Up For Free</h2>
+          <img src="/Digipodium-logo.png" alt="" className="myimg" />
+          <h3 className="myh1">Sign Up For Free</h3>
           
           <label htmlFor="" className="mylabel">
             Username
@@ -24,7 +23,7 @@ const SignUp = () => {
           <label htmlFor="" className="mylabel">
             Password
           </label>
-          <input className="myinput" type="password" placeholder="Password" />
+          <input className="myinput lastinput" type="password" placeholder="Password" />
 
           <button className="mybtn">Sign Up</button>
         </form>
