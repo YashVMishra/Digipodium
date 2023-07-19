@@ -23,7 +23,7 @@ const SignUp = () => {
           <label htmlFor="" className="mylabel">
             Password
           </label>
-          <input className="myinput lastinput" type="password" placeholder="Password" />
+          <input className="myinput lastinput" type="password" placeholder="Password" style={{margin:"0px 0px 0px 0px"}}/>
 
           <button className="mybtn">Sign Up</button>
         </form>
