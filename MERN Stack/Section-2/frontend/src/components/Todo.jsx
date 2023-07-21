@@ -46,8 +46,7 @@ const Todo = () => {
                             todoList.map((todo, index) => (
                             <li className='list-group-item'>
                                 <h3>{todo.task}</h3>
-                                <input type="checkbox"/>
-                                <button className={`ms-3 btn ${todo.completed ? 'btn-success' : 'btn-warning'}`} onClick={() => {completeTodo(index)}}>{todo.completed ? "Completed": "Pending"}</button>
+                                <button className={`btn ${todo.completed ? 'btn-success' : 'btn-warning'}`} onClick={() => {completeTodo(index)}}>{todo.completed ? "Completed": "Pending"}</button>
                                 <button className='ms-3 btn btn-danger' onClick={() => {deleteTodo(index)}}>Delete</button>
                             </li>))
                         }
