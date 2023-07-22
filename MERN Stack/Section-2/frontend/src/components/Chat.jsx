@@ -31,7 +31,7 @@ const Chat = () => {
             <div className="container">
                 <div className="card">
 
-                    <div className="card-body">
+                    <div className="card-body" style={{backgroundImage : 'url("https://wallpapers.com/images/hd/fun-chat-app-stickers-pattern-a7mhh6ay9qqcpyfh.jpg")', backgroundSize : "cover"}}>
                         <div>
                             {
                                 chat.map((chat, index) => (
@@ -39,7 +39,7 @@ const Chat = () => {
                                         <span className='fw-normal py-2 px-3 border rounded-3 text-black text-hidden me-3 d-inline' style={{width : "max-content", padding : "3px 10px 3px 10px", backgroundColor : "#90EE90", fontSize : "18px"}}>
                                             {chat.msg}
                                         </span>
-                                        <i class="fa-solid fa-trash-can " style={{color : "black", fontSize : "15px", cursor : "pointer"}} onClick={() => (deleteChat(index))}></i>
+                                        <i class="fa-solid fa-trash-can " style={{color : "#90EE90", fontSize : "15px", cursor : "pointer"}} onClick={() => (deleteChat(index))}></i>
                                     </div>
                                    
                                 ))
@@ -48,7 +48,7 @@ const Chat = () => {
                     </div>
 
                     <div className="card-footer">
-                        <input type="text" name="" id="" className='form-control' onKeyDown={addChat}/>
+                        <input type="text" name="" id="" placeholder='Type Here...' className='form-control' onKeyDown={addChat}/>
                     </div>
                 </div>
             </div>
