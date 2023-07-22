@@ -8,6 +8,7 @@ import EventHandling from './components/EventHandling';
 import StateManagement from './components/StateManagement';
 import Todo from './components/Todo';
 import Chat from './components/Chat';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='state' element={<StateManagement/>}/>
           <Route path='todo' element={<Todo/>}/>
           <Route path='chat' element={<Chat/>}/>
+          <Route path='contact' element={<ContactForm/>}/>
         </Routes>
         </BrowserRouter>
     </div>
