@@ -26,14 +26,18 @@ const ContactForm = () => {
 
   return (
     <div className='mybody-1'>
-        <h1> Contact Us </h1>
-        <form onSubmit={contactForm.handleSubmit}>
-            <label htmlFor="name"> Name: </label>
-            <input type="text" id="name" required="" name="name" onChange={contactForm.handleChange} value={contactForm.values.name}/>
-            <label htmlFor="email"> Email: </label>
-            <input type="email" id="email" required="" name="email" onChange={contactForm.handleChange} value={contactForm.values.email}/>
-            <label htmlFor="message"> Message: </label>
-            <textarea id="message" required="" defaultValue={""} name="msg" onChange={contactForm.handleChange} value={contactForm.values.msg}/>
+        <h1 className='myh1'> Contact Us </h1>
+        <form onSubmit={contactForm.handleSubmit} className='myform'>
+            <label htmlFor="name" className='mylabel-1'> Name: </label>
+            <p>{contactForm.errors.email}</p>
+            <input className='myinput' type="text" id="name" required="" name="name" onChange={contactForm.handleChange} value={contactForm.values.name}/>
+
+            <label htmlFor="email" className='mylabel-1'> Email: </label>
+            <input className='myinput' type="email" id="email" required="" name="email" onChange={contactForm.handleChange} value={contactForm.values.email}/>
+
+            <label htmlFor="message" className='mylabel-1'> Message: </label>
+            <textarea className='myinput' id="message" required="" defaultValue={""} name="msg" onChange={contactForm.handleChange} value={contactForm.values.msg}/>
+            
             <button type="”submit”" name="”submit”" className='submit'>
       {" "}
       Submit
