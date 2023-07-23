@@ -70,6 +70,12 @@ const Navbar = () => {
           </NavLink>
         </li>
 
+        <li className="nav-item dropdown">
+          <NavLink className="nav-link" to="/browse">
+            Browse
+          </NavLink>
+        </li>
+
       </ul>
       <form className="d-flex" role="search">
         <input

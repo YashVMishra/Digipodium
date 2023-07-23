@@ -5,7 +5,7 @@ import * as Yup from 'yup';
 
 const ContactForm = () => {
 
-    const loginSchema = Yup.object().shape({
+    const contactSchema = Yup.object().shape({
         email: Yup.string().email('Invalid email').required('Required'),
       });
 
@@ -21,7 +21,7 @@ const ContactForm = () => {
       console.log(values);
     },
 
-    validationSchema : loginSchema
+    validationSchema : contactSchema
   }); 
 
   return (
@@ -29,7 +29,7 @@ const ContactForm = () => {
         <h1 className='myh1'> Contact Us </h1>
         <form onSubmit={contactForm.handleSubmit} className='myform'>
             <label htmlFor="name" className='mylabel-1'> Name: </label>
-            <p>{contactForm.errors.email}</p>
+            <p className='error-label'>{contactForm.errors.email}</p>
             <input className='myinput' type="text" id="name" required="" name="name" onChange={contactForm.handleChange} value={contactForm.values.name}/>
 
             <label htmlFor="email" className='mylabel-1'> Email: </label>
@@ -37,7 +37,7 @@ const ContactForm = () => {
 
             <label htmlFor="message" className='mylabel-1'> Message: </label>
             <textarea className='myinput' id="message" required="" defaultValue={""} name="msg" onChange={contactForm.handleChange} value={contactForm.values.msg}/>
-            
+
             <button type="”submit”" name="”submit”" className='submit'>
       {" "}
       Submit

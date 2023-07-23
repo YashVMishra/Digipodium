@@ -9,6 +9,7 @@ import StateManagement from './components/StateManagement';
 import Todo from './components/Todo';
 import Chat from './components/Chat';
 import ContactForm from './components/ContactForm';
+import Browse from './components/Browse';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='todo' element={<Todo/>}/>
           <Route path='chat' element={<Chat/>}/>
           <Route path='contact' element={<ContactForm/>}/>
+          <Route path='browse' element={<Browse/>}/>
         </Routes>
         </BrowserRouter>
     </div>
