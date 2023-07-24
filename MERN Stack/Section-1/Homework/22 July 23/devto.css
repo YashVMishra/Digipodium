@@ -8,11 +8,12 @@ body {
     font-family: Montserrat;
 }
 
-.child-1, .child-3 {
-    border: 2px solid crimson;
-    background-color: white;
+.child-1 {
+    /* border: 2px solid crimson; */
+    background-color: rgba(189, 184, 184, 0.244);   
     padding: 10px;
     border-radius: 5px;
+    background: transparent;
 }
 
 .child-2 {
@@ -20,6 +21,13 @@ body {
     padding: 10px;
     border-radius: 5px;
     background: transparent;
+}
+
+.child-3 {
+    /* border: 2px solid crimson; */
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .parent{
@@ -30,7 +38,7 @@ body {
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: 2fr 5fr 3fr;
     /* grid-template-rows: 100px 200px; */
-    padding: 0 150px;
+    padding: 0 120px 0 100px;
 }
 
 .parentnav {
@@ -73,8 +81,8 @@ body {
 .myinput {
     border-radius: 5px;
     height: 35px;
-    margin-left: 15px;
-    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-bottom: 5px;
     width: 400px;
     margin-top: 0px;
     padding-left: 5px;
@@ -92,6 +100,11 @@ body {
     background-color: white;
     width: 150px;
     font-weight: bold;
+}
+
+.mybtn-2:hover{
+    background-color: blue;
+    color: white;
 }
 
 .mybtn-3 {
@@ -132,6 +145,11 @@ body {
     font-weight: bold;
 }
 
+.child-1-mybtn-2:hover {
+    background-color: blue;
+    color: white;
+}
+
 .child-1-mybtn-3 {
     margin: 10px 0px 10px 0px;
     font-size: 15px;
@@ -148,9 +166,13 @@ body {
 }
 
 .child-1-div-1 {
-    padding: 5px;
+    padding: 12px;
     border-radius: 5px;
     border: 2px solid white;
+    border-radius: 5px;
+    /* height: 400px; */
+    background-color: white;
+    
 }
 
 .child-2-mybtn-1, .child-2-mybtn-2, .child-2-mybtn-3 {
@@ -168,6 +190,171 @@ body {
 }
 
 .child-2-div-2 {
-    margin: 0px 10px;
-    border: 2px solid red;
+    margin: 10px 5px;
+    /* border: 2px solid red; */
+    border-radius: 5px;
+}
+
+.child-2-img-1 {
+    width: 450px;
+    height: 250px;
+}
+
+.child-2-img-2 {
+    border-radius: 20px;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.child-2-div-2-div-2 {
+    margin-top: 0px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.child-2-div-2-div-2-p-1 {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.child-2-div-2-div-2-p-1:hover {
+    color: darkblue;
+}
+
+.child-2-div-2-div-2-p-2 {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.child-2-mybtn-4 {
+    font-size: 12px;
+    padding: 4px 4px;
+    margin: 0px 3px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.child-2-mybtn-5 {
+    font-size: 12px;
+    padding: 4px 4px;
+    margin: 0px 3px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.child-2-mybtn-6 {
+    font-size: 12px;
+    padding: 4px 4px;
+    margin: 0px 3px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.child-2-mybtn-7 {
+    font-size: 12px;
+    padding: 4px 4px;
+    margin: 0px 3px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.child-2-mybtn-4:hover {
+    background-color: rgba(225, 192, 249, 0.68);
+    border: 2px solid rgba(214, 163, 250, 0.68);
+}
+
+.child-2-mybtn-5:hover {
+    background-color: rgba(225, 192, 249, 0.68);
+    border: 2px solid rgba(214, 163, 250, 0.68);
+}
+
+.child-2-mybtn-6:hover {
+    background-color: rgba(225, 192, 249, 0.68);
+    border: 2px solid rgba(214, 163, 250, 0.68);
+}
+
+.child-2-mybtn-7:hover {
+    background-color: rgba(192, 249, 227, 0.68);
+    border: 2px solid rgba(103, 255, 158, 0.68);
+}
+
+.child-2-div-2-div-2-p-3 {
+    margin-top: 8px;
+    margin-left: 40px;
+    font-size: 15px;
+}
+
+.child-2-div-2-div-2-span-1 {
+    margin-right: 35px;
+    float: right;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.child-2-mybtn-8 {
+    font-size: 12px;
+    padding: 4px 4px;
+    margin: 0px 3px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.child-2-mybtn-9 {
+    font-size: 12px;
+    padding: 4px 4px;
+    margin: 0px 3px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.child-2-mybtn-8:hover {
+    background-color: rgba(225, 192, 249, 0.68);
+    border: 2px solid rgba(214, 163, 250, 0.68);
+}
+
+.child-2-mybtn-9:hover {
+    background-color: rgba(192, 249, 227, 0.68);
+    border: 2px solid rgba(103, 255, 158, 0.68);
+}
+
+.child-1-div-2 {
+    margin-top: 0px;
+    margin-left: 10px;
+    background: transparent;
+    /* background-color: rgba(189, 184, 184, 0.244); */
+    width: 100%;
+}
+
+.child-3-div-1-img-1 {
+    margin: 0 0;
+    width: 300px;
+}
+
+.child-3-div-2-p:hover {
+    color: darkblue;
+}
+
+.child-2-div-2-div-2-div-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.child-2-div-2-div-2-div-1-span {
+    margin-left: 3px;
+    margin-top: 8px;
+    /* padding-top: 4px; */
+    font-size: 13px;
+    font-weight: 600;
 }

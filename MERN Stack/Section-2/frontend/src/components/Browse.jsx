@@ -26,13 +26,30 @@ const Browse = () => {
     ))
   }
 
+  const filterLaptop = (e) => {
+    const value=e.target.value;
+    setlaptopList(laptopData.filter((laptop) => {return laptop.title.toLowerCase().includes(value.toLowerCase())}));
+  }
+
   return (
     <div>
+        <header>
+            <div className="container py-4">
+                <p className="display-2 text-center fw-bold">
+                    Browse Laptop
+                </p>
+
+                <input type="text" className="form-control w-75 m-auto" onChange={filterLaptop}/>
+            </div>
+        </header>
+
+        <div>
         <div className="container">
             <div className="row">
                 {displayLaptopData()}
             </div>
         </div>
+    </div>
     </div>
   )
 }

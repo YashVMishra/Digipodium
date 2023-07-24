@@ -14,7 +14,7 @@ const laptopData = [
         price : 37998,
         reviews : 3374,
         rating : 4.2,
-        image : 'https://m.media-amazon.com/images/I/41Dq1jqMhyL.jpg'
+        image : 'https://rukminim2.flixcart.com/image/312/312/xif0q/computer/q/e/z/-original-imagpxgqesgrthks.jpeg?q=70'
     },
 
     {
