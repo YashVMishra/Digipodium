@@ -17,11 +17,35 @@ router.post('/add', (req, res) => {
 });
 
 router.get('/getall', (req, res) => {
-    res.send('response from user getall');
+    Model.find({})
+    .then((result) => {
+        res.json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 })
 
-router.get('/getbyid', (req, res) => {
-    res.send('response from user getbyid');
+// colon denotes a URL parameter.
+router.get('/getbyid/:id', (req, res) => {
+    console.log(req.params.id);
+    Model.findById(req.params.id)
+    .then((result) => {
+        res.json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+})
+
+router.get('/getbyemail/:email', (req, res) => {
+    Model.find({email : req.params.email})
+    .then((result) => {
+        res.json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
 })
 
 
