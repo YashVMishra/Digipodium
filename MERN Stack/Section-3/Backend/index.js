@@ -8,12 +8,14 @@ const port = 5000;
 // import routers
 const UserRouter = require('./routers/userRouter');
 const ProductRouter = require('./routers/productRouter');
+const ContactRouter = require('./routers/contactRouter');
 
 app.use(express.json());
 
 // middlewares
 app.use('/user', UserRouter);
 app.use('/product', ProductRouter);
+app.use('/contact', ContactRouter);
 
 
 
