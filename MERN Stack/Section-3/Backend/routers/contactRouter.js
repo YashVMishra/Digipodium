@@ -27,9 +27,9 @@ router.get('/getall', (req, res) => {
 })
 
 // colon denotes a URL parameter.
-router.get('/getbytitle/:title', (req, res) => {
+router.get('/getbyemail/:email', (req, res) => {
     console.log(req.params.id);
-    Model.find({title : req.params.title})
+    Model.find({email : req.params.email})
     .then((result) => {
         res.json(result);
     }).catch((err) => {
