@@ -38,4 +38,28 @@ router.get('/getbytitle/:title', (req, res) => {
     });
 })
 
+router.delete('/delete/:id', (req, res) => {
+    Model.findByIdAndDelete(req.params.id)
+    .then((result) => {
+        res.json(result)
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+})
+
+// if we dont write new : true then it will show previous data
+// which is being overriden and then if we do getAll then we can see
+// updated data but by doing new : true we can see the updated 
+// data their only.
+router.put('/update/:id', (req, res) => {
+    Model.findByIdAndUpdate(req.params.id, req.body, {new : true})
+    .then((result) => {
+        res.json(result)
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+})
+
 module.exports = router;
