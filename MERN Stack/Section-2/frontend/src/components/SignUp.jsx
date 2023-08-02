@@ -1,8 +1,12 @@
 import React from 'react'
 import '../styling/signup.css';
 import { useFormik } from 'formik';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
+
+  const naviagte = useNavigate();
 
   const loginForm = useFormik({
     initialValues : {
@@ -24,6 +28,21 @@ const SignUp = () => {
       });
 
       console.log(res.status);
+
+      if(res.status === 200){
+        Swal.fire({
+          icon : 'success',
+          title :  `${values.name} registered succesfully`,
+          text :'Now Login to Continue'
+        })
+        naviagte('/login');
+      } else {
+        Swal.fire({
+          icon : 'error',
+          title : 'OOPs',
+          text :'Some Error Occured'
+        })
+      }
     }
   });
 

@@ -5,11 +5,16 @@ const express = require('express');
 const app = express();
 const port = 5000;
 
+const cors = require('cors');
+
 // import routers
 const UserRouter = require('./routers/userRouter');
 const ProductRouter = require('./routers/productRouter');
 const ContactRouter = require('./routers/contactRouter');
 
+app.use(cors({
+    origin: ['http://localhost:3000'] // allow requests only for this domain
+}));
 app.use(express.json());
 
 // middlewares

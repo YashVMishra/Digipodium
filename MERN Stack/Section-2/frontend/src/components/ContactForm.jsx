@@ -17,8 +17,19 @@ const ContactForm = () => {
       msg: ""
     },
 
-    onSubmit : (values) => {
+    onSubmit : async (values) => {
       console.log(values);
+
+      // sending request to backend
+      const res = await fetch('http://localhost:5000/contact/add', {
+        method : 'POST',
+        body : JSON.stringify(values),
+        headers : {
+          "Content-Type": "application/json",
+        }
+      });
+
+      console.log(res.status);
     },
 
     validationSchema : contactSchema
