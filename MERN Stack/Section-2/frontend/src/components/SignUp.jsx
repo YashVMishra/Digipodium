@@ -46,6 +46,20 @@ const SignUp = () => {
     }
   });
 
+  const uploadFile = async (e) => {
+    let file = e.target.files[0];
+
+    const fd = new FormData();
+    fd.append('myfile', file);
+
+    const res = await fetch('http://localhost:5000/util/uploadfile', {
+      method : 'POST',
+      body   : fd,
+    });
+
+    console.log(res.status);
+  }
+
   return (
     <div className='mybody'>
       <div className="mydiv">
@@ -68,6 +82,9 @@ const SignUp = () => {
             Password
           </label>
           <input className="myinput lastinput" type="password" placeholder="Password" style={{margin:"0px 0px 0px 0px"}} name='password' onChange={loginForm.handleChange}  value={loginForm.values.password}/>
+
+          <label htmlFor="">Upload File</label>
+          <input type="file" name="" id="" onChange={uploadFile}/>
 
           <button className="mybtn">Sign Up</button>
         </form>

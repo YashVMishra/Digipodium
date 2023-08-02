@@ -11,6 +11,7 @@ const cors = require('cors');
 const UserRouter = require('./routers/userRouter');
 const ProductRouter = require('./routers/productRouter');
 const ContactRouter = require('./routers/contactRouter');
+const UtilRouter = require('./routers/util');
 
 app.use(cors({
     origin: ['http://localhost:3000'] // allow requests only for this domain
@@ -21,6 +22,7 @@ app.use(express.json());
 app.use('/user', UserRouter);
 app.use('/product', ProductRouter);
 app.use('/contact', ContactRouter);
+app.use('/util', UtilRouter);
 
 
 
