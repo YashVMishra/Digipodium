@@ -2,6 +2,7 @@ import React from 'react'
 import '../styling/login.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import Swal from 'sweetalert2';
 
 const Login = () => {
 
@@ -17,8 +18,34 @@ const Login = () => {
       password: ""
     },
 
-    onSubmit : (values) => {
+    onSubmit : async (values) => {
       console.log(values);
+      const res = await fetch('http://localhost:5000/user/authenticate', {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      console.log(res.status);
+      if(res.status===200){
+        Swal.fire({
+          icon:'success',
+          title:'Login Success!'
+        })
+      } else if(res.status===401){
+        Swal.fire({
+          icon:'error',
+          title:"Invalid Credentials!",
+          text:'Email or Password is Incorrect'
+        })
+      } else {
+        Swal.fire({
+          icon:'error',
+          title:'Something went wrong'
+        })
+      }
     },
 
     validationSchema : loginSchema
