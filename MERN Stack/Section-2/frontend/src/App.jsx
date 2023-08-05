@@ -11,11 +11,14 @@ import Chat from './components/Chat';
 import ContactForm from './components/ContactForm';
 import Browse from './components/Browse';
 import Product from './components/Product';
+import ManageUser from './components/ManageUser';
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
   return (
     <div>
+        <Toaster position='top-center'></Toaster>
         <BrowserRouter>
         <Navbar></Navbar>
         <Routes>
@@ -30,6 +33,7 @@ function App() {
           <Route path='contact' element={<ContactForm/>}/>
           <Route path='browse' element={<Browse/>}/>
           <Route path='product' element={<Product/>}/>
+          <Route path='manageuser' element={<ManageUser/>}/>
         </Routes>
         </BrowserRouter>
     </div>

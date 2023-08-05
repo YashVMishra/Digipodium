@@ -5,9 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">
-      Navbar
-    </a>
+
     <button
       className="navbar-toggler"
       type="button"
@@ -79,6 +77,12 @@ const Navbar = () => {
         <li className="nav-item dropdown">
           <NavLink className="nav-link" to="/product">
             Product
+          </NavLink>
+        </li>
+
+        <li className="nav-item dropdown">
+          <NavLink className="nav-link" to="/manageuser">
+            Manage User
           </NavLink>
         </li>
 
