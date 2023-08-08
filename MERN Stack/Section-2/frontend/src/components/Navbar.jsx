@@ -1,7 +1,34 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import useUserContext from '../UserContext'
 
 const Navbar = () => {
+
+  const {loggedIn, logout} = useUserContext();
+
+  const showLoginOption = () => {
+    if(loggedIn){
+      return <li className='nav-item'>
+        <button onClick={logout} className='btn btn-danger'>LogOut</button>
+        </li>
+    } else {
+      return (
+        <>
+          <li className="nav-item">
+          <NavLink className="nav-link" to="/login">
+            Login
+          </NavLink>
+        </li>
+
+        <li className="nav-item dropdown">
+          <NavLink className="nav-link" to="/signup">
+            SignUp
+          </NavLink>
+        </li>
+        </>
+      )
+    }
+  }
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
@@ -23,18 +50,6 @@ const Navbar = () => {
         <li className="nav-item">
           <NavLink className="nav-link" aria-current="page" to="/home">
             Home
-          </NavLink>
-        </li>
-
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/login">
-            Login
-          </NavLink>
-        </li>
-
-        <li className="nav-item dropdown">
-          <NavLink className="nav-link" to="/signup">
-            SignUp
           </NavLink>
         </li>
 
@@ -86,18 +101,8 @@ const Navbar = () => {
           </NavLink>
         </li>
 
+        {showLoginOption()}
       </ul>
-      <form className="d-flex" role="search">
-        <input
-          className="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button className="btn btn-outline-success" type="submit">
-          Search
-        </button>
-      </form>
     </div>
   </div>
 </nav>

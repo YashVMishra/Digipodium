@@ -3,8 +3,11 @@ import '../styling/login.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Swal from 'sweetalert2';
+import useUserContext from '../UserContext';
 
 const Login = () => {
+
+  const {setLoggedIn} = useUserContext();
 
   const loginSchema = Yup.object().shape({
     email: Yup.string().email('Invalid email').required('Required'),
@@ -34,6 +37,10 @@ const Login = () => {
           icon:'success',
           title:'Login Success!'
         })
+
+        const data = await res.json();
+        sessionStorage.setItem('user', JSON.stringify(data));
+        setLoggedIn(true);
       } else if(res.status===401){
         Swal.fire({
           icon:'error',
