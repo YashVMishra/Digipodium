@@ -10,7 +10,7 @@ const laptopData = [
 
     {
         id: 7298,
-        title: 'Asus Vivobook',
+        title: 'Asus HeroBook',
         price : 37998,
         reviews : 3374,
         rating : 4.2,
